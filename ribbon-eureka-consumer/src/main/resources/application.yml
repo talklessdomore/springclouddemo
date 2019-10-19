@@ -1,0 +1,17 @@
+server:
+  port: 9096
+spring:
+  application:
+    name: ribbon-eureka-consumer
+#单点eureka配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@140.143.81.236:9090/eureka/
+RIBBON-EUREKA-PROVIDER:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+
+

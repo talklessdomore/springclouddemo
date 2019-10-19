@@ -1,0 +1,14 @@
+server:
+  port: 9093
+spring:
+  application:
+    name: eureka-provider
+#单点eureka配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@140.143.81.236:9090/eureka/
+
+
+
+
